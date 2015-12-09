@@ -1,0 +1,11 @@
+<div class="pagination" ng-init="vm.init()">
+    <ul>
+        <li ng-class="{disabled: vm.currentPage == 1}">
+            <a href ng-click="vm.prevPage()">« Prev</a>
+        </li><li ng-repeat="n in vm.range(vm.pageCount)" class="page" ng-class="{active: n == vm.currentPage}" ng-click="vm.setPage(n)">
+            <a href>{{n}}</a>
+        </li><li ng-class="{disabled: vm.currentPage == vm.pageCount}">
+            <a href ng-click="vm.nextPage()">Next »</a>
+        </li>
+    </ul>
+</div>

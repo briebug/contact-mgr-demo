@@ -1,0 +1,39 @@
+<section>
+    <h1>Contact Details</h1>
+
+    <div>
+        <div class='view-group'>
+            <div class="view-label"></div>
+            <div class="view-element header"><h2>{{vm.contact.firstName}} {{vm.contact.lastName}}</h2></div>
+        </div>
+
+        <div class='view-group'>
+            <div class="view-label">Email :</div>
+            <div class="view-element">{{vm.contact.email}}</div>
+        </div>
+
+        <div class='view-group'>
+            <div class="view-label">Phone :</div>
+            <div class="view-element">{{vm.contact.phone}}</div>
+        </div>
+
+        <div class='view-group'>
+            <div class="view-label">Address :</div>
+            <div class="view-element">
+                {{vm.contact.address}}<br>{{vm.contact.city}}, {{vm.contact.state}} {{vm.contact.zip}}
+            </div>
+        </div>
+
+        <div class='view-group'>
+            <div class="view-label">Joined :</div>
+            <div class="view-element">{{vm.contact.joinDate}}</div>
+        </div>
+    </div>
+
+    <div class='view-group'>
+        <div class="view-buttons">
+            <button type="button" class="form-button" ng-click="vm.back()">back</button>
+        </div>
+    </div>
+
+</section>

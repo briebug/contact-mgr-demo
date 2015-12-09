@@ -1,0 +1,14 @@
+<div class="contact-filters" ng-init="vm.init()">
+    <input ng-model="vm.filterText" ng-change="vm.filter()" placeholder="search by name">
+    <select class="select-state" ng-model="vm.filterState" ng-change="vm.filter()" ng-options="state as state for state in vm.states">
+        <option value="">filter by state</option>
+    </select>
+    <div class="per-page">
+        <span>items per page:</span>
+        <select ng-model="vm.itemsPerPage">
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="50">50</option>
+        </select>
+    </div>
+</div>

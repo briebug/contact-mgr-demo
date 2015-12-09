@@ -1,0 +1,26 @@
+{
+  "name": "contact-mgr",
+  "version": "0.0.1",
+  "description": "Contact Manager (Demo)",
+  "authors": [
+    "Dave Laursen (dave.laursen@briebug.com)"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular-mocks": "1.3.8",
+    "sinon": "http://sinonjs.org/releases/sinon-1.12.1.js",
+    "bardjs": "0.1.0",
+    "jquery": "~2.1.4"
+  },
+  "dependencies": {
+    "angular": "1.3.8",
+    "angular-route": "1.3.8",
+    "angular-ui-router": "ui-router#~0.2.15"
+  }
+}

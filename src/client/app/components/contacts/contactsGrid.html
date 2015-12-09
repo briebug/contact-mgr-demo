@@ -1,0 +1,20 @@
+<div class="contact-list" ng-init="vm.init()">
+    <ul>
+        <li class="header-item">
+            <span class="header">
+                <span class="col1"><h2>Name</h2></span>
+                <span class="col2"><h2>Phone</h2></span>
+                <span class="col3"><h2>Email</h2></span>
+                <span class="col4"><h2>State</h2></span>
+            </span>
+        </li>
+        <li class="list-item" ng-repeat="contact in vm.pagedContacts">
+            <a href class="contact" ng-click="vm.select(contact.id)">
+                <span class="col1">{{contact.lastName}}, {{contact.firstName}}</span>
+                <span class="col2">{{contact.phone}}</span>
+                <span class="col3">{{contact.email}}</span>
+                <span class="col4">{{contact.state}}</span>
+            </a>
+        </li>
+    </ul>
+<div>

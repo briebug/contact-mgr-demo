@@ -1,0 +1,24 @@
+<section ng-init="vm.init()">
+    <h1>Contacts</h1>
+
+    <div>
+        <cm-contact-filters
+            contacts="vm.filteredContacts"
+            items-per-page="vm.itemsPerPage"
+            on-filter="vm.onFilter(text, state)">
+        </cm-contact-filters>
+
+        <cm-contacts-grid
+            contacts="vm.filteredContacts"
+            current-page="vm.currentPage"
+            items-per-page="vm.itemsPerPage"
+            on-select="vm.onSelect(contactId)">
+        </cm-contacts-grid>
+
+        <cm-pagination
+            current-page="vm.currentPage"
+            items-per-page="vm.itemsPerPage"
+            item-count="vm.filteredContacts.length">
+        </cm-pagination>
+    </div>
+</section>

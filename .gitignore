@@ -1,0 +1,33 @@
+#NPM
+node_modules/
+npm-debug.log
+
+#Bower
+bower_components/
+
+#.idea
+.idea/*
+.idea/workspace.xml
+.idea/tasks.xml
+dist/*
+
+# Git
+.git/
+
+tmp/
+.tmp/
+
+#Data
+data/
+
+#Build Process
+xunit.xml
+tests/results/
+tests/test-results.xml
+tests/test-unit.html
+protractor_html/
+.DS_Store
+report/
+build/
+
+src/test-unit.html

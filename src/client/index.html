@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <base href="/">
+    <title ng-bind="title">Contact Manager</title>
+
+    <link rel="stylesheet" href="/src/client/styles/reset.css"/>
+    <link rel="stylesheet" href="/src/client/styles/app.css"/>
+</head>
+<body>
+
+    <div class="content" ui-view></div>
+
+    <!-- build:js js/lib.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-route/angular-route.js"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js js/app.js -->
+    <!-- inject:js -->
+    <script src="/src/client/app/app.module.js"></script>
+    <script src="/src/client/app/components/components.module.js"></script>
+    <script src="/src/client/app/components/contactDetails/contactDetails.module.js"></script>
+    <script src="/src/client/app/components/contacts/contacts.module.js"></script>
+    <script src="/src/client/app/components/pagination/pagination.module.js"></script>
+    <script src="/src/client/app/core/core.module.js"></script>
+    <script src="/src/client/app/services/services.module.js"></script>
+    <script src="/src/client/app/components/contactDetails/contactDetails.directive.js"></script>
+    <script src="/src/client/app/components/contactDetails/contactDetails.route.js"></script>
+    <script src="/src/client/app/components/contacts/contactFilters.directive.js"></script>
+    <script src="/src/client/app/components/contacts/contacts.directive.js"></script>
+    <script src="/src/client/app/components/contacts/contacts.route.js"></script>
+    <script src="/src/client/app/components/contacts/contactsGrid.directive.js"></script>
+    <script src="/src/client/app/components/pagination/pagination.directive.js"></script>
+    <script src="/src/client/app/core/core.route.js"></script>
+    <script src="/src/client/app/services/contact.service.js"></script>
+    <!-- endinject -->
+
+    <!-- inject:templates:js -->
+    <!-- endinject -->
+    <!-- endbuild -->
+</body>
+</html>
