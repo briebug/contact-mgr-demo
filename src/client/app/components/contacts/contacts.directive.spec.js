@@ -17,13 +17,11 @@
 
             bard.mockService($state, mocks.StateMock($q));
             sinon.spy($state, 'go');
-
-            contacts = mockData.getMockContacts();
         });
 
         beforeEach(function() {
             scope = $rootScope.$new();
-            scope.contacts = contacts.slice();
+            scope.contacts = mockData.getMockContacts();
             template = '<cm-contacts contacts="contacts"></cm-contacts>';
 
             element = $compile(template)(scope);
