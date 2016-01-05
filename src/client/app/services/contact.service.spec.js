@@ -35,6 +35,8 @@
                 $httpBackend.flush();
             });
 
+            // when the 'done' parameter is specified, the mocha test will not finish until done() is called - if
+            // it is never called, the test will timeout
             it('should resolve the promise with the response data', function(done) {
                 var expectedData = [{id: 1}, {id: 2}];
                 // return expectedData JSON object when '/api/data' is called
@@ -42,7 +44,8 @@
 
                 contactService.getAll()
                     .then(function(data) {
-                        // when the promise is resolved,
+                        // when the promise is resolved, the expect will validate that the resolved value is what
+                        // we expect - calling done() will then tell Mocha that the test is complete
                         expect(data).to.deep.equal(expectedData);
                         done();
                     })
